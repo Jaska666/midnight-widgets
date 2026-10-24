@@ -1,0 +1,21 @@
+{
+    "KPackageStructure": "Plasma/Applet",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Name": "Jaska666"
+            }
+        ],
+        "Category": "Windows and Tasks",
+        "Description": "Active application name, pinned to the centre of the screen",
+        "EnabledByDefault": true,
+        "Icon": "window",
+        "Id": "dev.jacoblewis.midnighttitle",
+        "License": "GPL-2.0+",
+        "Name": "Midnight Title",
+        "Website": "https://github.com/Jaska666/midnight-widgets",
+        "Version": "1.0.0",
+        "BugReportUrl": "https://github.com/Jaska666/midnight-widgets/issues"
+    },
+    "X-Plasma-API-Minimum-Version": "6.0"
+}

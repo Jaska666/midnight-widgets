@@ -1,0 +1,13 @@
+[Unit]
+Description=Midnight Dock: Steam friends-online badge (needs ~/.config/midnight-dock/steam.env)
+PartOf=graphical-session.target
+After=network-online.target
+StartLimitIntervalSec=0
+
+[Service]
+ExecStart=/usr/bin/python3 %h/.local/share/plasma/plasmoids/dev.jacoblewis.midnightdock/tools/steam-friends-daemon.py
+Restart=on-failure
+RestartSec=30
+
+[Install]
+WantedBy=graphical-session.target

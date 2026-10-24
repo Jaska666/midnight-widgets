@@ -1,0 +1,20 @@
+{
+    "KPlugin": {
+        "Authors": [
+            {
+                "Name": "Jaska666"
+            }
+        ],
+        "Category": "Weather",
+        "Description": "The Midnight weather pill, lifted out of the flip-clock wallpaper",
+        "Icon": "weather-few-clouds",
+        "Id": "dev.jacoblewis.midnightweather",
+        "License": "MIT",
+        "Name": "Midnight Weather",
+        "Version": "1.0.0",
+        "Website": "https://github.com/Jaska666/midnight-widgets",
+        "BugReportUrl": "https://github.com/Jaska666/midnight-widgets/issues"
+    },
+    "KPackageStructure": "Plasma/Applet",
+    "X-Plasma-API-Minimum-Version": "6.0"
+}

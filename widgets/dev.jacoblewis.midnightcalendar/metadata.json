@@ -1,0 +1,21 @@
+{
+    "KPackageStructure": "Plasma/Applet",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Name": "Jaska666"
+            }
+        ],
+        "Category": "Date and Time",
+        "Description": "Apple-style calendar in the Midnight design language, synced from iCloud",
+        "EnabledByDefault": true,
+        "Icon": "view-calendar",
+        "Id": "dev.jacoblewis.midnightcalendar",
+        "License": "GPL-2.0+",
+        "Name": "Midnight Calendar",
+        "Version": "1.0.0",
+        "Website": "https://github.com/Jaska666/midnight-widgets",
+        "BugReportUrl": "https://github.com/Jaska666/midnight-widgets/issues"
+    },
+    "X-Plasma-API-Minimum-Version": "6.0"
+}

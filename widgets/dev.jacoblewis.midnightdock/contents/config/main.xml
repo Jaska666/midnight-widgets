@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kcfg xmlns="http://www.kde.org/standards/kcfg/1.0"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.kde.org/standards/kcfg/1.0
+      http://www.kde.org/standards/kcfg/1.0/kcfg.xsd">
+  <kcfgfile name=""/>
+  <group name="General">
+    <entry name="launchers" type="StringList">
+      <default></default>
+    </entry>
+
+    <!-- Resting icon size in logical px. -->
+    <entry name="iconSize" type="Int">
+      <default>40</default>
+    </entry>
+
+    <!-- Peak magnification, percent. 190 = 1.9x. 100 disables the effect. -->
+    <entry name="maxZoom" type="Int">
+      <default>190</default>
+    </entry>
+
+    <!-- Falloff radius as a percent of iconSize. Larger = more neighbours ripple. -->
+    <entry name="influence" type="Int">
+      <default>260</default>
+    </entry>
+
+    <entry name="iconSpacing" type="Int">
+      <default>12</default>
+    </entry>
+
+    <!-- Live window previews in a tooltip when hovering a running app. Real
+         screencasts via ScreencastingRequest + PipeWireSourceItem, so they show
+         current window content rather than a cached snapshot. -->
+    <entry name="showPreviews" type="Bool">
+      <default>true</default>
+    </entry>
+
+    <!-- Name label above the magnified icon, as macOS does. -->
+    <entry name="showLabels" type="Bool">
+      <default>true</default>
+    </entry>
+
+    <!-- Draw our own dock bar and switch the panel's native background off.
+         Required for icons to overflow above the bar. -->
+    <entry name="ownBackground" type="Bool">
+      <default>true</default>
+    </entry>
+
+    <entry name="groupWindows" type="Bool">
+      <default>true</default>
+    </entry>
+  </group>
+</kcfg>

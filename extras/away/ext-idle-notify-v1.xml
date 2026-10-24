@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Minimal copy of staging/ext-idle-notify/ext-idle-notify-v1.xml (v1 + v2 requests).
+     wayland-protocols is not installed on this box, so the interface is vendored here.
+     Opcode ORDER matters and matches upstream: destroy=0, get_idle_notification=1, get_input_idle_notification=2 (v2). -->
+<protocol name="ext_idle_notify_v1">
+  <interface name="ext_idle_notifier_v1" version="2">
+    <request name="destroy" type="destructor"/>
+    <request name="get_idle_notification">
+      <arg name="id" type="new_id" interface="ext_idle_notification_v1"/>
+      <arg name="timeout" type="uint"/>
+      <arg name="seat" type="object" interface="wl_seat"/>
+    </request>
+    <request name="get_input_idle_notification" since="2">
+      <arg name="id" type="new_id" interface="ext_idle_notification_v1"/>
+      <arg name="timeout" type="uint"/>
+      <arg name="seat" type="object" interface="wl_seat"/>
+    </request>
+  </interface>
+  <interface name="ext_idle_notification_v1" version="2">
+    <request name="destroy" type="destructor"/>
+    <event name="idled"/>
+    <event name="resumed"/>
+  </interface>
+</protocol>

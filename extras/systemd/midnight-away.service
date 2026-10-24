@@ -1,0 +1,14 @@
+[Unit]
+Description=Midnight widgets: slide away after idle
+PartOf=graphical-session.target
+After=graphical-session.target
+StartLimitIntervalSec=0
+
+[Service]
+Environment=MIDNIGHT_AWAY_IDLE=30
+ExecStart=/usr/bin/python3 %h/.local/share/midnight-widgets/away/midnight-away.py
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=graphical-session.target

@@ -1,0 +1,8 @@
+[Unit]
+Description=Midnight Calendar: iCloud sync
+After=graphical-session.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/python3 %h/.local/share/plasma/plasmoids/dev.jacoblewis.midnightcalendar/contents/code/icloud-calendar.py
+TimeoutStartSec=120

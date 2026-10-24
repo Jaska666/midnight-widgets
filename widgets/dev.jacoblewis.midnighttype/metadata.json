@@ -1,0 +1,20 @@
+{
+    "KPlugin": {
+        "Authors": [
+            {
+                "Name": "Jaska666"
+            }
+        ],
+        "Category": "Utilities",
+        "Description": "Typing races on the desktop, in the Midnight design language",
+        "Icon": "input-keyboard",
+        "Id": "dev.jacoblewis.midnighttype",
+        "License": "MIT",
+        "Name": "Midnight Type",
+        "Version": "1.0.0",
+        "Website": "https://github.com/Jaska666/midnight-widgets",
+        "BugReportUrl": "https://github.com/Jaska666/midnight-widgets/issues"
+    },
+    "KPackageStructure": "Plasma/Applet",
+    "X-Plasma-API-Minimum-Version": "6.0"
+}
